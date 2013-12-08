@@ -1,4 +1,4 @@
-# CZSharedImage
+# CZSharedImage [unstable / in progress]
 
 On iOS, the method ```UIImage#imageNamed:``` optimizes image loading in two ways:
 
