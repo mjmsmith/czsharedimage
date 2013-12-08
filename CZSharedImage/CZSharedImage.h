@@ -17,6 +17,4 @@
 + (UIImage *)imageForPath:(NSString *)path;
 + (UIImage *)setImage:(UIImage *)image forPath:(NSString *)path;
 
-+ (NSString *)md5StringForData:(NSData *)data;
-
 @end
