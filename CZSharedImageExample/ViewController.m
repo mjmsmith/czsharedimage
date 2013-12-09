@@ -57,7 +57,7 @@
   
   switch (indexPath.row) {
     case 0: {
-      [self clear];
+      [self clearImages];
       break;
     }
     case 1: {
@@ -85,13 +85,11 @@
 }
 
 - (void)fillImagesUsingBlock:(UIImage *(^)())block {
-  [self clear];
+  [self clearImages];
   
   for (int row = 0; row < 10; ++row) {
     for (int col = 0; col < 10; ++col) {
-      
-      UIImage *image = block();
-      UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+      UIImageView *imageView = [[UIImageView alloc] initWithImage:block()];
       
       imageView.frame = CGRectMake((col * 28), (row * 28), 28, 28);
       [self.imagesView addSubview:imageView];
@@ -99,36 +97,7 @@
   }
 }
 
-- (void)fillWithUIImages {
-  [self clear];
-
-  for (int row = 0; row < 10; ++row) {
-    for (int col = 0; col < 10; ++col) {
-      
-      UIImage *image = [UIImage imageWithContentsOfFile:[NSBundle.mainBundle.bundlePath stringByAppendingString:@"/500x500.jpg"]];
-      UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-      
-      imageView.frame = CGRectMake((col * 28), (row * 28), 28, 28);
-      [self.imagesView addSubview:imageView];
-    }
-  }
-}
-
-- (void)fillWithCZSharedImages {
-  [self clear];
-
-  for (int row = 0; row < 10; ++row) {
-    for (int col = 0; col < 10; ++col) {
-      UIImage *image = [CZSharedImage imageWithContentsOfFile:[NSBundle.mainBundle.bundlePath stringByAppendingString:@"/500x500.jpg"]];
-      UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-      
-      imageView.frame = CGRectMake((col * 28), (row * 28), 28, 28);
-      [self.imagesView addSubview:imageView];
-    }
-  }
-}
-
-- (void)clear {
+- (void)clearImages {
   while (self.imagesView.subviews.count > 0) {
     [[self.imagesView.subviews firstObject] removeFromSuperview];
   }
@@ -144,11 +113,6 @@
 
 - (NSString *)imagePath {
   return [NSBundle.mainBundle.bundlePath stringByAppendingString:@"/500x500.jpg"];
-}
-       
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
 }
 
 @end

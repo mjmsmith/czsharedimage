@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "CZSharedImage"
-  s.version      = "0.2.0"
-  s.summary      = "Optimize UIImage#imageWithContentsOfFile and UIImage#imageWithData by sharing UIImage objects."
+  s.version      = "0.3.0"
+  s.summary      = "Optimize iOS image loading by sharing UIImage objects."
   s.description  = <<-DESC
                       On iOS, the method UIImage#imageNamed: optimizes image loading in two ways:
 

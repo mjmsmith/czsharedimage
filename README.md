@@ -1,4 +1,4 @@
-# CZSharedImage [unstable / in progress]
+# CZSharedImage
 
 On iOS, the method ```UIImage#imageNamed:``` optimizes image loading in two ways:
 
@@ -17,7 +17,7 @@ __CZSharedImage__ requires ARC and iOS 6.0.  (It uses the NSMapTable class intro
 
 __CZSharedImage.h__ is the only header file that needs to be imported.
 
-For usage examples, see [CZSharedImageTests.m](https://github.com/mjmsmith/gcdobjc/blob/master/GCDObjCTests/GCDObjCTests.m) or the [example app]().
+For usage examples, see [CZSharedImageTests.m](https://github.com/mjmsmith/czsharedimage/blob/master/CZSharedImageTests/CZSharedImageTests.m) or the [example app](https://github.com/mjmsmith/czsharedimage/tree/master/CZSharedImageExample).
 
 In the example app, 100 instances of a 500x500 image (each occupying approximately 1MB of memory when decoded) are displayed on the screen.  The resident size of the app when using  ```UIImage#imageWithContentsOfFile:``` is 99MB more than when using ```CZSharedImage#imageWithContentsOfFile:```.
 
