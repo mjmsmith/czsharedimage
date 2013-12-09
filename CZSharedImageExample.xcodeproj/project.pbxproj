@@ -34,20 +34,20 @@
 			containerPortal = 4DCB8A671852399F00F4068F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4DCB8A6E1852399F00F4068F;
-			remoteInfo = CZSharedImage;
+			remoteInfo = CZSharedImageExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D63C14D18539B850058E8ED /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
-		4DCB8A6F1852399F00F4068F /* CZSharedImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZSharedImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCB8A6F1852399F00F4068F /* CZSharedImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZSharedImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCB8A721852399F00F4068F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DCB8A741852399F00F4068F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4DCB8A761852399F00F4068F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4DCB8A7A1852399F00F4068F /* CZSharedImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZSharedImage-Info.plist"; sourceTree = "<group>"; };
+		4DCB8A7A1852399F00F4068F /* CZSharedImageExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZSharedImageExample-Info.plist"; sourceTree = "<group>"; };
 		4DCB8A7C1852399F00F4068F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DCB8A7E1852399F00F4068F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DCB8A801852399F00F4068F /* CZSharedImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZSharedImage-Prefix.pch"; sourceTree = "<group>"; };
+		4DCB8A801852399F00F4068F /* CZSharedImageExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZSharedImageExample-Prefix.pch"; sourceTree = "<group>"; };
 		4DCB8A811852399F00F4068F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DCB8A821852399F00F4068F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4DCB8A851852399F00F4068F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 		4DCB8A9B1852399F00F4068F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DCB8A9D1852399F00F4068F /* CZSharedImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZSharedImageTests.m; sourceTree = "<group>"; };
 		4DCB8AA818523C4B00F4068F /* 500x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 500x500.jpg; sourceTree = "<group>"; };
-		4DCB8AAA18525A8700F4068F /* CZSharedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZSharedImage.h; sourceTree = "<group>"; };
-		4DCB8AAB18525A8700F4068F /* CZSharedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZSharedImage.m; sourceTree = "<group>"; };
+		4DCB8AAA18525A8700F4068F /* CZSharedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZSharedImage.h; path = ../CZSharedImage/CZSharedImage.h; sourceTree = "<group>"; };
+		4DCB8AAB18525A8700F4068F /* CZSharedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZSharedImage.m; path = ../CZSharedImage/CZSharedImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D206E4F18556C5F00B3C9F3 /* CZSharedImage */ = {
+			isa = PBXGroup;
+			children = (
+				4DCB8AAA18525A8700F4068F /* CZSharedImage.h */,
+				4DCB8AAB18525A8700F4068F /* CZSharedImage.m */,
+			);
+			name = CZSharedImage;
+			path = CZSharedImageExample;
+			sourceTree = "<group>";
+		};
 		4DCB8A661852399F00F4068F = {
 			isa = PBXGroup;
 			children = (
-				4DCB8A781852399F00F4068F /* CZSharedImage */,
+				4D206E4F18556C5F00B3C9F3 /* CZSharedImage */,
+				4DCB8A781852399F00F4068F /* CZSharedImageExample */,
 				4DCB8A971852399F00F4068F /* CZSharedImageTests */,
 				4DCB8A711852399F00F4068F /* Frameworks */,
 				4DCB8A701852399F00F4068F /* Products */,
@@ -102,7 +113,7 @@
 		4DCB8A701852399F00F4068F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4DCB8A6F1852399F00F4068F /* CZSharedImage.app */,
+				4DCB8A6F1852399F00F4068F /* CZSharedImageExample.app */,
 				4DCB8A901852399F00F4068F /* CZSharedImageTests.xctest */,
 			);
 			name = Products;
@@ -120,30 +131,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4DCB8A781852399F00F4068F /* CZSharedImage */ = {
+		4DCB8A781852399F00F4068F /* CZSharedImageExample */ = {
 			isa = PBXGroup;
 			children = (
 				4DCB8A811852399F00F4068F /* AppDelegate.h */,
 				4DCB8A821852399F00F4068F /* AppDelegate.m */,
 				4DCB8A841852399F00F4068F /* Main.storyboard */,
-				4DCB8AAA18525A8700F4068F /* CZSharedImage.h */,
-				4DCB8AAB18525A8700F4068F /* CZSharedImage.m */,
 				4DCB8A871852399F00F4068F /* ViewController.h */,
 				4DCB8A881852399F00F4068F /* ViewController.m */,
 				4DCB8A8A1852399F00F4068F /* Images.xcassets */,
 				4DCB8AA718523C1600F4068F /* Resources */,
 				4DCB8A791852399F00F4068F /* Supporting Files */,
 			);
-			path = CZSharedImage;
+			path = CZSharedImageExample;
 			sourceTree = "<group>";
 		};
 		4DCB8A791852399F00F4068F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4DCB8A7A1852399F00F4068F /* CZSharedImage-Info.plist */,
+				4DCB8A7A1852399F00F4068F /* CZSharedImageExample-Info.plist */,
 				4DCB8A7B1852399F00F4068F /* InfoPlist.strings */,
 				4DCB8A7E1852399F00F4068F /* main.m */,
-				4DCB8A801852399F00F4068F /* CZSharedImage-Prefix.pch */,
+				4DCB8A801852399F00F4068F /* CZSharedImageExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4DCB8A6E1852399F00F4068F /* CZSharedImage */ = {
+		4DCB8A6E1852399F00F4068F /* CZSharedImageExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DCB8AA11852399F00F4068F /* Build configuration list for PBXNativeTarget "CZSharedImage" */;
+			buildConfigurationList = 4DCB8AA11852399F00F4068F /* Build configuration list for PBXNativeTarget "CZSharedImageExample" */;
 			buildPhases = (
 				4DCB8A6B1852399F00F4068F /* Sources */,
 				4DCB8A6C1852399F00F4068F /* Frameworks */,
@@ -189,9 +198,9 @@
 			);
 			dependencies = (
 			);
-			name = CZSharedImage;
-			productName = CZSharedImage;
-			productReference = 4DCB8A6F1852399F00F4068F /* CZSharedImage.app */;
+			name = CZSharedImageExample;
+			productName = CZSharedImageExample;
+			productReference = 4DCB8A6F1852399F00F4068F /* CZSharedImageExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4DCB8A8F1852399F00F4068F /* CZSharedImageTests */ = {
@@ -226,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4DCB8A6A1852399F00F4068F /* Build configuration list for PBXProject "CZSharedImage" */;
+			buildConfigurationList = 4DCB8A6A1852399F00F4068F /* Build configuration list for PBXProject "CZSharedImageExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4DCB8A6E1852399F00F4068F /* CZSharedImage */,
+				4DCB8A6E1852399F00F4068F /* CZSharedImageExample */,
 				4DCB8A8F1852399F00F4068F /* CZSharedImageTests */,
 			);
 		};
@@ -294,7 +303,7 @@
 /* Begin PBXTargetDependency section */
 		4DCB8A961852399F00F4068F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4DCB8A6E1852399F00F4068F /* CZSharedImage */;
+			target = 4DCB8A6E1852399F00F4068F /* CZSharedImageExample */;
 			targetProxy = 4DCB8A951852399F00F4068F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,8 +420,8 @@
 					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CZSharedImage/CZSharedImage-Prefix.pch";
-				INFOPLIST_FILE = "CZSharedImage/CZSharedImage-Info.plist";
+				GCC_PREFIX_HEADER = "CZSharedImageExample/CZSharedImageExample-Prefix.pch";
+				INFOPLIST_FILE = "CZSharedImageExample/CZSharedImageExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,8 +437,8 @@
 					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CZSharedImage/CZSharedImage-Prefix.pch";
-				INFOPLIST_FILE = "CZSharedImage/CZSharedImage-Info.plist";
+				GCC_PREFIX_HEADER = "CZSharedImageExample/CZSharedImageExample-Prefix.pch";
+				INFOPLIST_FILE = "CZSharedImageExample/CZSharedImageExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,14 +448,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CZSharedImage.app/CZSharedImage";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CZSharedImageExample.app/CZSharedImageExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CZSharedImage/CZSharedImage-Prefix.pch";
+				GCC_PREFIX_HEADER = "CZSharedImageExample/CZSharedImageExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -462,14 +471,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CZSharedImage.app/CZSharedImage";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CZSharedImageExample.app/CZSharedImageExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CZSharedImage/CZSharedImage-Prefix.pch";
+				GCC_PREFIX_HEADER = "CZSharedImageExample/CZSharedImageExample-Prefix.pch";
 				INFOPLIST_FILE = "CZSharedImageTests/CZSharedImageTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -480,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4DCB8A6A1852399F00F4068F /* Build configuration list for PBXProject "CZSharedImage" */ = {
+		4DCB8A6A1852399F00F4068F /* Build configuration list for PBXProject "CZSharedImageExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DCB8A9F1852399F00F4068F /* Debug */,
@@ -489,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DCB8AA11852399F00F4068F /* Build configuration list for PBXNativeTarget "CZSharedImage" */ = {
+		4DCB8AA11852399F00F4068F /* Build configuration list for PBXNativeTarget "CZSharedImageExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DCB8AA21852399F00F4068F /* Debug */,
