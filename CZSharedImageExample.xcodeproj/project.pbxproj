@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D63C14E18539B850058E8ED /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D63C14D18539B850058E8ED /* Reveal.framework */; };
 		4DCB8A731852399F00F4068F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCB8A721852399F00F4068F /* Foundation.framework */; };
 		4DCB8A751852399F00F4068F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCB8A741852399F00F4068F /* CoreGraphics.framework */; };
 		4DCB8A771852399F00F4068F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCB8A761852399F00F4068F /* UIKit.framework */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D63C14D18539B850058E8ED /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 		4DCB8A6F1852399F00F4068F /* CZSharedImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZSharedImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCB8A721852399F00F4068F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DCB8A741852399F00F4068F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,7 +70,6 @@
 				4DCB8A751852399F00F4068F /* CoreGraphics.framework in Frameworks */,
 				4DCB8A771852399F00F4068F /* UIKit.framework in Frameworks */,
 				4DCB8A731852399F00F4068F /* Foundation.framework in Frameworks */,
-				4D63C14E18539B850058E8ED /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +119,6 @@
 		4DCB8A711852399F00F4068F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D63C14D18539B850058E8ED /* Reveal.framework */,
 				4DCB8A721852399F00F4068F /* Foundation.framework */,
 				4DCB8A741852399F00F4068F /* CoreGraphics.framework */,
 				4DCB8A761852399F00F4068F /* UIKit.framework */,
@@ -417,7 +413,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZSharedImageExample/CZSharedImageExample-Prefix.pch";
@@ -434,7 +429,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZSharedImageExample/CZSharedImageExample-Prefix.pch";
