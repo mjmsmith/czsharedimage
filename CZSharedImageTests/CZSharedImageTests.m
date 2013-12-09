@@ -14,6 +14,15 @@
 
 @implementation CZSharedImageTests
 
+- (void)testUIImageMethods {
+  UIImage *image = [CZSharedImage imageWithContentsOfFile:[self imagePath]];
+  XCTAssertNotEqual(image, [UIImage imageWithContentsOfFile:[self imagePath]]);
+
+  NSData *data = [NSData dataWithContentsOfFile:[self imagePath]];
+  image = [UIImage imageWithData:data];
+  XCTAssertNotEqual(image, [UIImage imageWithData:data]);
+}
+
 - (void)testImageWithContentsOfFile {
   UIImage *image = [CZSharedImage imageWithContentsOfFile:[self imagePath]];
   
