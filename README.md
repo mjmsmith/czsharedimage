@@ -96,7 +96,7 @@ if (!image) {
   // While the fetched UIImage object below remains alive,
   // CZSharedImage#imageForPath: will return a reference to it.
   
-  UIImage *image = [CZSharedImage imageWithData:data];
+  UIImage *image = [UIImage imageWithData:data];
   [CZSharedImage setImage:image forPath:path];
 }
 ...
