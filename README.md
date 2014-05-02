@@ -29,7 +29,7 @@ Shared images are created using the __CZSharedImage__ class.
 
 ### Creating images
 
-```
+```objc
 + (UIImage *)imageWithContentsOfFile:(NSString *)path;
 + (UIImage *)imageWithData:(NSData *)data;
 + (UIImage *)imageWithData:(NSData *)data scale:(CGFloat)scale;
@@ -37,7 +37,7 @@ Shared images are created using the __CZSharedImage__ class.
 
 Simply replace calls to the above three __UIImage__ methods with the __CZSharedImage__ methods of the same name.  If the associated __UIImage__ object already exists in the running app, the method will immediately return a reference to that object.  If not, it will be loaded as usual by the corresponding __UIImage__ initializer.
 
-```
+```objc
 UIImage *image = [CZSharedImage imageWithContentsOfFile:@"/path/to/image/file"];
 ```
 
@@ -45,14 +45,14 @@ Note that in the case of images loaded using ```imageWithData:```, subsequent re
 
 ### Associating images with paths
 
-```
+```objc
 + (UIImage *)imageForPath:(NSString *)path;
 + (void)setImage:(UIImage *)image forPath:(NSString *)path;
 ```
 
 For cases where an image is loaded using some mechanism other than the three __imageWith...__ methods (for instance, over the network), it can still be manually associated with a path such as the URL for subsequent requests:
 
-```
+```objc
 // Try to get a reference to this image.
 
 NSString *path = @"http://example.com/foo.png";
@@ -80,7 +80,7 @@ if (!image) {
 
 Similarly, an image fetched from a database could be associated with a unique path corresponding to the database row (and column if necessary):
 
-```
+```objc
 // Try to get a reference to this image.
 
 int personid = <...get row ID...>;
